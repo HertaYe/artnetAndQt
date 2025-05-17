@@ -1,0 +1,23 @@
+%%{init: {
+    "theme": "default",
+    "themeVariables": {
+        "secondaryTextColor": "white",
+        "fontSize": "40px"
+    }
+}}%%
+flowchart LR
+    classDef startend fill:#F5EBFF,stroke:#BE8FED,stroke-width:4px,font-size:30px;
+    classDef process fill:#E5F6FF,stroke:#73A6FF,stroke-width:4px,font-size:30px;
+    classDef decision fill:#FFF6CC,stroke:#FFBC52,stroke-width:4px,font-size:30px;
+
+    A([开始解析]):::startend --> B{检查Art-Net头}:::decision
+    B -- 是 --> C{检查OpCode}:::decision
+    B -- 否 --> Z([结束]):::startend
+    C -- 0x5000 --> D{检查Universe}:::decision
+    C -- 其他 --> Z
+    D -- 匹配 --> E(提取DMX数据):::process
+    D -- 不匹配 --> Z
+    E --> F(更新LED颜色):::process
+    F --> G(FastLED.show):::process
+    G --> Z
+基于artnet的专业舞台灯光系统控制研究

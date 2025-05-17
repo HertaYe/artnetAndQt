@@ -1,0 +1,34 @@
+%%{init: {
+    "theme": "default",
+    "themeVariables": {
+        "secondaryTextColor": "white",
+        "fontSize": "35px"
+    }
+}}%%
+flowchart LR
+    classDef startend fill:#F5EBFF,stroke:#BE8FED,stroke-width:4px,font-size:30px;
+    classDef process fill:#E5F6FF,stroke:#73A6FF,stroke-width:4px,font-size:30px;
+    classDef decision fill:#FFF6CC,stroke:#FFBC52,stroke-width:4px,font-size:30px,edgeLabelFontSize:50px;
+    %% classDef yesText font-size:20px;
+
+    A([开始]):::startend --> B(
+        初始化
+        串口通信
+        WiFi连接
+        TCP和UDP
+        FastLED
+    ):::process
+    B --> C(进入主循环):::process
+    C --> D{是否有TCP客户端连接?}:::decision
+    D -- 是 --> E(处理TCP客户端请求):::process
+    D -- 否 ---> C
+    E --> C
+    C --> F{是否收到UDP数据包?}:::decision
+    F -- 是 --> G(处理UDP数据包):::process
+    G --> H{是否为Art - Net DMX数据包?}:::decision
+    H -- 是 --> I(解析Art - Net数据包并更新LED):::process
+    H -- 否 --> C
+    F -- 否 --> C
+    C --> J(更新LED显示):::process
+    K --> C
+    J --> K(短暂延迟):::process

@@ -1,0 +1,15 @@
+%%{init: {
+    "theme": "default",
+    "themeVariables": {
+        "secondaryTextColor": "white",
+        "fontSize": "15px"
+    }
+}}%%
+flowchart TD
+    classDef startend fill:#F5EBFF,stroke:#BE8FED,stroke-width:4px,font-size:30px;
+    classDef process fill:#E5F6FF,stroke:#73A6FF,stroke-width:4px,font-size:30px;
+    classDef decision fill:#FFF6CC,stroke:#FFBC52,stroke-width:4px,font-size:30px;
+
+    PC([控制电脑]):::startend --WiFi ArtNet协议 --> Router([路由器]):::decision
+    Router -- WiFi ArtNet协议 --> ESP([ESP8266节点]):::process
+    ESP -- fastLED信号 --> LED([WS2812灯带]):::process

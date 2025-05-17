@@ -1,0 +1,9 @@
+/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/CMakeFiles/artnet.dir
+/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/CMakeFiles/edit_cache.dir
+/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/CMakeFiles/rebuild_cache.dir
+/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/CMakeFiles/list_install_components.dir
+/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/CMakeFiles/install.dir
+/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/CMakeFiles/install/local.dir
+/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/CMakeFiles/install/strip.dir
+/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/CMakeFiles/artnet_autogen_timestamp_deps.dir
+/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/CMakeFiles/artnet_autogen.dir

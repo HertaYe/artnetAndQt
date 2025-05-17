@@ -1,0 +1,13 @@
+# ninja log v6
+566	2589	1741439905161382325	CMakeFiles/artnet.dir/buttonpagewidget.cpp.o	5cf207b94b2eb3a2
+3	53	1747405987753117313	artnet_autogen/timestamp	a892a000afeeb1e0
+3	53	1747405987753117313	artnet_autogen/mocs_compilation.cpp	a892a000afeeb1e0
+3	53	1747405987753117313	/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/artnet_autogen/timestamp	a892a000afeeb1e0
+3	53	1747405987753117313	/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/artnet_autogen/mocs_compilation.cpp	a892a000afeeb1e0
+53	2303	1747405987803117047	CMakeFiles/artnet.dir/artnet_autogen/mocs_compilation.cpp.o	9c1901b26e20d126
+3	464	1747384821817500598	build.ninja	23bdbea65c3b4ac5
+54	2687	1747405987804824113	CMakeFiles/artnet.dir/widget.cpp.o	d62184d5e80e0a78
+2687	3047	1747405990437103035	artnet	7845f4bced68922
+3	464	1747384821817500598	/home/ht/Documents/QtProjects/artnet/build/unknown-Debug/cmake_install.cmake	23bdbea65c3b4ac5
+53	2213	1747405987804429726	CMakeFiles/artnet.dir/main.cpp.o	122edd5218fd7bc0
+488	2788	1741504047471030227	CMakeFiles/artnet.dir/QledWidget.cpp.o	999f915e48add698
